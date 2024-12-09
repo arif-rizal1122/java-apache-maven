@@ -13,3 +13,17 @@
 5. package, untuk membuat distribution file aplikasi
 6. install, untuk menginstalll project ke local repository, sehigga bisa digunakan di project lain di local
 7. deploy,  deploy project ke remote repository di server
+
+# BUILD PROJECT
+
+1. Saat kita membuat project biasanya akan ada 2 jenis kode yang kita buat, kode program nya, dan kode testing nya
+2. Maven mendukung hal tersebut
+
+¥ Menjalankan Kompilasi Program
+mvn compile
+
+¥ Menjalankan Unit Test
+mvn test
+
+¥ Mem-package Project
+mvn package
