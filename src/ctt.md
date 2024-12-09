@@ -10,6 +10,9 @@ file, membuat dokumentasi, menjalankan automated test sampai manajemen dependenc
 2. Pembuatan project di maven menggunakan archetype, archetype adalah template project
 3. Kita bisa menggunakan yang sudah disediakan oleh maven, atau bahkan bisa membuat template archetype sendiri
 
+¥ membuat project maven
+mvn archetype:generate
+maven-archetype-quickstart
 
 
 ¥ link dowload zip maven
