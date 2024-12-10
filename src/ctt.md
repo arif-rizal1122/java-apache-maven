@@ -14,6 +14,12 @@ file, membuat dokumentasi, menjalankan automated test sampai manajemen dependenc
 mvn archetype:generate
 maven-archetype-quickstart
 
-
+# MAVEN PACKAGE
 ¥ link dowload zip maven
 https://maven.apache.org/download.cgi
+
+# MAVEN PROPERTIES
+1. Maven mendukung properties untuk menyimpan data konfigurasi
+2. Fitur ini akan sangat memudahkan kita kedepannya, dibandingkan melakukan hardcode di konfigurasi maven
+
+
