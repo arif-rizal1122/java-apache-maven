@@ -27,3 +27,22 @@ mvn test
 
 ¥ Mem-package Project
 mvn package
+
+
+# DEPENDENCY
+
+1. Proyek  aplikasi jarang sekali berdiri sendiri, biasanya membutuhkan dukungan dari pihak lain, seperti tool atau library
+2. Tanpa build tool seperti Apache Maven, untuk menambahkan library dari luar, kita harus melakukannya secara manual
+3. Apache Maven mendukung dependency management, dimana kita tidak perlu me-manage secara manual proses penambahkan dependency (tool atau library) ke dalam proyek aplikasi kita
+
+¥ Dependency Scope
+1. Saat kita menambahkan dependency ke project Maven, kita harus menentukan scope dependency tersebut, ada banyak scope yang ada di Maven, namun sebenarnya hanya beberapa saja yang sering kita gunakan, seperti
+2. compile, ini adalah  scope default. Compile artinya dependency tersebut akan digunakan untuk build project, test project dan menjalankan project.
+3. test, ini adalah scope untuk test project, hanya akan di include di bagian test project
+
+¥ Mencari Dependency
+1. https://search.maven.org/
+2. https://mvnrepository.com/
+
+
+
