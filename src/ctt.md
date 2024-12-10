@@ -33,3 +33,17 @@ https://maven.apache.org/download.cgi
 3. Tidak hanya Assembly Plugin, sebenarnya masih banyak plugin lain yang bisa kita gunakan untuk membuat distribution file di Maven
 4. Untuk membuat distribution file, kita bisa menggunakan perintah mvn package assembly:single
 
+
+# MULTI MODULE PROJECT
+
+¥ Multi Module Project
+1. Saat aplikasi kita sudah sangat besar, kadang ada baiknya kita buat aplikasi dalam bentuk modular
+2. Misal kita pisahkan module model, controller, view, service, repository, dan lain-lain
+3. Untungnya, Maven mendukung pembuatan project multi module
+
+¥ Membuat Module Baru
+1. Untuk membuat module baru, di dalam project yang sudah ada, kita hanya tinggal membuat folder baru, lalu menambahkan setting pom.xml di folder tersebut
+2. Module harus memiliki parent, dimana parent nya adalah project diatas folder tersebut
+3. Selanjutnya, di parent nya pun, module harus di include
+
+
