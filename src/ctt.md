@@ -22,4 +22,14 @@ https://maven.apache.org/download.cgi
 1. Maven mendukung properties untuk menyimpan data konfigurasi
 2. Fitur ini akan sangat memudahkan kita kedepannya, dibandingkan melakukan hardcode di konfigurasi maven
 
+# Membuat Distribution File
+1. Secara default, maven mendukung pembuatan distribution file menggunakan lifecycle package
+2. Hanya saja, hasil distribution file nya berupa file jar yang berisikan binary code dari project kita
+3. Dependency lainnya tidak dimasukkan, sehingga tidak bisa langsung dijalankan
+
+¥ Menggunakan Assembly Plugin
+1. Salah satu plugin yang bisa kita gunakan untuk membuat distribution file beserta dependency yang kita butuhkan adalah Assembly Plugin
+2. https://maven.apache.org/plugins/maven-assembly-plugin/usage.html
+3. Tidak hanya Assembly Plugin, sebenarnya masih banyak plugin lain yang bisa kita gunakan untuk membuat distribution file di Maven
+4. Untuk membuat distribution file, kita bisa menggunakan perintah mvn package assembly:single
 
