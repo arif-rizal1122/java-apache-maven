@@ -44,5 +44,24 @@ mvn package
 1. https://search.maven.org/
 2. https://mvnrepository.com/
 
+# Multi Module Project
 
+¥ Multi Module Project
+1. Saat aplikasi kita sudah sangat besar, kadang ada baiknya kita buat aplikasi dalam bentuk modular
+2. Misal kita pisahkan module model, controller, view, service, repository, dan lain-lain
+3. Untungnya, Maven mendukung pembuatan project multi module
+
+¥ Membuat Module Baru
+1. Untuk membuat module baru, di dalam project yang sudah ada, kita hanya tinggal membuat folder baru, lalu menambahkan setting pom.xml di folder tersebut
+2. Module harus memiliki parent, dimana parent nya adalah project diatas folder tersebut
+3. Selanjutnya, di parent nya pun, module harus di include
+
+
+
+# Dependency Management
+
+Saat project kita sudah besar, kadang kita sering menggunakan banyak dependency
+Masalah dengan banyaknya dependency adalah, jika kita salah menggunakan dependency yang sama namun versinya berbeda-beda
+Maven mendukung fitur dependency management, dimana kita bisa memasukkan daftar dependency di parent module beserta versinya, lalu menambahkan dependency tersebut di module tanpa harus menggunakan versinya
+Secara otomatis versi dependency akan sama dengan yang ada di dependency management di parent module
 
